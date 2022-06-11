@@ -337,6 +337,41 @@ h2 {
     text-align: center;
     margin: 10px;
 }
+.seccionIndex1:hover{
+    height: 280px;
+    width: 580px;
+    border: 2px outset rgb(255, 0, 0);
+    transition: all 1.3s;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.seccionIndex2:hover{
+    height: 280px;
+    width: 580px;
+    border: 2px outset rgb(255, 0, 0);
+    transition: all 1.3s;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.seccionIndex3:hover{
+    height: 280px;
+    width: 580px;
+    border: 2px outset rgb(255, 0, 0);
+    transition: all 1.3s;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.seccionIndex4:hover{
+    height: 280px;
+    width: 580px;
+    border: 2px outset rgb(255, 0, 0);
+    transition: all 1.3s;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
 
 
 .seccionIndex5 {
