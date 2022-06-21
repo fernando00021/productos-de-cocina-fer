@@ -593,6 +593,7 @@ h2 {
         width: 500px;
         height: 200px;
     }
+  
 }
 
 /* responsive media query celular 480px */
@@ -874,6 +875,19 @@ h2 {
     .seccionIndex4{
         background-image: url(https://png.pngtree.com/png-vector/20190330/ourlarge/pngtree-vector-organization-icon-png-image_894718.jpg);
         background-size: cover;
+    }
+
+    /* ofertaspromos */
+    .divOfertas1{
+        height: 120px;
+        width: 180px;
+    }
+    .divOfertas2{
+        height: 120px;
+        width: 180px;
+    }
+    .divOfertas3{
+        width: ;
     }
 }
 
