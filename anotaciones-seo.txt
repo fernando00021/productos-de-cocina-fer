@@ -1,0 +1,4 @@
+modifique los titulos de los html
+agregue keywords a todos los html
+revise q todos mis archivos tengan un h1 y no más
+le agregue la etiqueta meta description al proyecto

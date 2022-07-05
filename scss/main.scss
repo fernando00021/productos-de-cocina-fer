@@ -18,6 +18,7 @@
   padding: 15px;
   justify-content: space-evenly;
   background-image: linear-gradient(45deg, rgb(219, 44, 73), rgb(235, 235, 20));
+  align-content: center;
 }
 
 .colorTitulo1 {
@@ -342,7 +343,7 @@ p, h2 {
   padding: 15px;
   position: relative;
   top: 1px;
-  left: 1%;
+  left: 20px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -407,6 +408,47 @@ p, h2 {
 }
 
 /* responsive media query tablet*/
+@media (max-width: 1074px) {
+  .seccionIndex1,.seccionIndex2,.seccionIndex3,.seccionIndex4{
+    height: 300px;
+    width: 500px;
+  }
+  .seccionIndex5{
+    width: 1043px;
+    right: 2px;
+  }
+  .flexPadre{
+    flex-direction: row;
+
+    li{
+      padding: 15px;
+      height: 20px;
+      width: 144px;
+      font-size: small;
+    }
+  }
+
+  .divOfertas1,.divOfertas2{
+    height:450px ;
+    width:400px ;
+  }
+  .divOfertas3{
+    height: 450px;
+  }
+  .mainOfertas{
+    height: 1250px;
+  }
+
+  .gridOfertas{
+    height: 200px;
+  }
+
+  .ofertasYpromoscontenido{
+    width: 1000px;
+  }
+}
+
+
 @media (max-width: 768px) {
   /* inicio */
 
