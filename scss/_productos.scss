@@ -1,0 +1,30 @@
+.mainProductos {
+    height: 70%;
+  }
+  
+  .nuestrosProductoscontenido {
+    height: 1700px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    div {
+      height: 400px;
+      text-align: center;
+      font-size: small;
+      font-family: 'Roboto', sans-serif;
+  
+      img:hover {
+        transform: translatey(10px);
+        transition: all 1.3s;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  .imagen {
+    height: 200px;
+    width: 200px;
+    padding: 30px;
+  }

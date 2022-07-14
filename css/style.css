@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&display=swap");
-.contenidoLocales li {
-  font-family: 'Roboto', sans-serif;
-  font-size: medium; }
-
 * {
   margin: 0;
   padding: 0; }
@@ -26,7 +22,6 @@
 
 .flexPadre li {
   list-style: none;
-  border: 2px solid black;
   padding: 25px;
   background-color: black;
   width: 160px;
@@ -68,14 +63,16 @@
   background-color: black;
   color: white;
   border: 2px solid #ff3c00;
-  width: 400px; }
+  width: 400px;
+  margin: 10px; }
   .contenidoLocales li {
     list-style: none; }
 
 p, h2 {
   list-style: none;
   font-family: 'Roboto', sans-serif;
-  font-size: medium; }
+  font-size: medium;
+  padding: 5px; }
 
 .mainComentario {
   height: 450px; }
@@ -95,7 +92,8 @@ p, h2 {
   background-color: black;
   color: white;
   text-align: center;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px; }
   .comentarioContenido input {
     height: 2.5rem;
     width: 250px;
@@ -107,6 +105,8 @@ p, h2 {
     height: 5rem;
     width: 250px;
     border-radius: 15px; }
+  .comentarioContenido input:hover, .comentarioContenido textarea:hover {
+    background-color: #ff5100; }
 
 .mainProductos {
   height: 70%; }
@@ -142,7 +142,7 @@ p, h2 {
   background-color: #888882;
   border: 2px outset #ff5100;
   position: relative;
-  top: 65.4%;
+  top: 50px;
   padding: 15px; }
   .ofertasYpromoscontenido form input {
     height: 2.5rem;
@@ -158,64 +158,22 @@ p, h2 {
   flex-direction: column;
   align-items: center;
   background-color: #c5cccc;
-  height: 1600px; }
+  height: 650px; }
   .mainOfertas p {
     font-family: 'Roboto', sans-serif;
     margin: 10px; }
 
-.gridOfertas {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1.1fr 1.1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: ". . . ." "divOfertas1 divOfertas1 divOfertas2 divOfertas2" "divOfertas3 divOfertas3 divOfertas3 divOfertas3" ". . . .";
-  width: 700px;
-  height: 300px;
-  justify-content: center; }
-
-.divOfertas1 {
-  grid-area: divOfertas1; }
-
-.divOfertas2 {
-  grid-area: divOfertas2; }
-
-.divOfertas3 {
-  grid-area: divOfertas3; }
-
-.gridOfertas div {
-  background-color: azure;
-  border: 2px solid black;
-  padding: 15px; }
-
-.divOfertas1 {
+.card {
+  margin: 5px;
   color: white;
-  background-color: gray;
-  height: 600px;
-  width: 600px;
-  text-align: center;
-  background-image: url(https://linkempleo.co/wp-content/uploads/2022/05/Cencosud.png);
-  background-size: cover;
-  font-family: 'Roboto', sans-serif; }
+  background-color: black; }
+  .card:hover {
+    cursor: pointer;
+    background-color: #eb1212; }
 
-.divOfertas2 {
-  color: white;
-  background-color: gray;
-  height: 600px;
-  width: 600px;
-  text-align: center;
-  background-image: url(https://aynpinturaintegral.com.ar/wp-content/uploads/2019/07/yKCGa-Fa.png);
-  background-size: cover;
-  font-family: 'Roboto', sans-serif; }
-
-.divOfertas3 {
-  color: white;
-  background-color: gray;
-  height: 600px;
-  text-align: center;
-  background-image: url(https://statics.eleconomista.com.ar/2020/07/614e3c36dfae8.png);
-  background-size: cover;
-  font-family: 'Roboto', sans-serif; }
+.cardOferta {
+  display: flex;
+  flex-wrap: wrap; }
 
 /* index */
 .seccionIndex {
@@ -237,7 +195,8 @@ p, h2 {
   background-image: url(https://d3ugyf2ht6aenh.cloudfront.net/stores/001/416/936/products/2111-ccad221c0de781694c16355395870833-1024-1024.jpg);
   background-size: cover;
   text-align: center;
-  margin: 10px; }
+  margin: 10px;
+  border-radius: 10px; }
 
 .seccionIndex2 {
   background-color: #888882;
@@ -248,7 +207,8 @@ p, h2 {
   background-image: url(https://sneakers123.s3.amazonaws.com/blackfriday/236823/conversions/30off-thumb.jpg);
   background-size: cover;
   text-align: center;
-  margin: 10px; }
+  margin: 10px;
+  border-radius: 10px; }
 
 .seccionIndex3 {
   background-color: #888882;
@@ -259,7 +219,8 @@ p, h2 {
   background-image: url(https://img.freepik.com/foto-gratis/comida-ingredientes_1220-4884.jpg?size=626&ext=jpg&ga=GA1.2.1588357300.1637193600);
   background-size: cover;
   text-align: center;
-  margin: 10px; }
+  margin: 10px;
+  border-radius: 10px; }
 
 .seccionIndex4 {
   background-color: #888882;
@@ -270,7 +231,8 @@ p, h2 {
   background-image: url(https://i.ytimg.com/vi/ouhq3W8GLwE/maxresdefault.jpg);
   background-size: cover;
   text-align: center;
-  margin: 10px; }
+  margin: 10px;
+  border-radius: 10px; }
 
 .seccionIndex1:hover, .seccionIndex2:hover, .seccionIndex3:hover, .seccionIndex4:hover {
   height: 280px;
@@ -293,7 +255,8 @@ p, h2 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  border-radius: 10px; }
   .seccionIndex5 input {
     height: 2.5rem;
     width: 350px;
@@ -343,11 +306,10 @@ p, h2 {
   .seccionIndex1, .seccionIndex2, .seccionIndex3, .seccionIndex4 {
     height: 300px;
     width: 500px; }
-    .seccionIndex1:hover,.seccionIndex2:hover,.seccionIndex3:hover,.seccionIndex4:hover{
-      height: 290px;
-      width: 400px;
-      margin-bottom: 20px;
-    }
+  .seccionIndex1:hover, .seccionIndex2:hover, .seccionIndex3:hover, .seccionIndex4:hover {
+    height: 290px;
+    width: 400px;
+    margin-bottom: 20px; }
   .seccionIndex5 {
     width: 1043px;
     right: 2px; }
@@ -358,152 +320,96 @@ p, h2 {
       height: 20px;
       width: 144px;
       font-size: small; }
- 
-  .divOfertas1, .divOfertas2 {
-    height: 450px;
-    width: 400px; }
-  .divOfertas3 {
-    height: 450px; }
-  .mainOfertas {
-    height: 1250px; }
-  .gridOfertas {
-    height: 200px; }
   .ofertasYpromoscontenido {
     width: 1000px; } }
 
-@media (max-width:1066px) {
-  .flexPadre li{
+@media (max-width: 1066px) {
+  .flexPadre li {
     font-size: x-small;
-    width: 130px;
-  }
-  .seccionIndex5{
+    width: 130px; }
+  .seccionIndex5 {
     width: 1028px;
     right: 30px;
-    left: 15px;
-  }
-}
+    left: 15px; } }
 
-@media(max-width:1055px){
-  .seccionIndex5{
+@media (max-width: 1055px) {
+  .seccionIndex5 {
     width: 900px;
-    left: 75px;
-  }
-  .seccionIndex1,.seccionIndex2,.seccionIndex3,.seccionIndex4{
+    left: 75px; }
+  .seccionIndex1, .seccionIndex2, .seccionIndex3, .seccionIndex4 {
     width: 490px;
-    height: 300px;
-  }
- 
-}
+    height: 300px; } }
 
-@media (max-width:1040px){
-  .seccionIndex1,.seccionIndex2,.seccionIndex3,.seccionIndex4{
+@media (max-width: 1040px) {
+  .seccionIndex1, .seccionIndex2, .seccionIndex3, .seccionIndex4 {
     width: 450px;
-    height: 280px;
-  }
-}
-@media(max-width:1031px){
-  .seccionIndex1:hover,.seccionIndex2:hover,.seccionIndex3:hover,.seccionIndex4:hover{
-    margin-bottom: 1px;
-  }
-}
+    height: 280px; } }
 
-@media(max-width:1030px){
-  .seccionIndex1,.seccionIndex2,.seccionIndex3,.seccionIndex4{
+@media (max-width: 1031px) {
+  .seccionIndex1:hover, .seccionIndex2:hover, .seccionIndex3:hover, .seccionIndex4:hover {
+    margin-bottom: 1px; } }
+
+@media (max-width: 1030px) {
+  .seccionIndex1, .seccionIndex2, .seccionIndex3, .seccionIndex4 {
     width: 380px;
-    height: 250px;
-  }
-  .seccionIndex1:hover,.seccionIndex2:hover,.seccionIndex3:hover,.seccionIndex4:hover{
+    height: 250px; }
+  .seccionIndex1:hover, .seccionIndex2:hover, .seccionIndex3:hover, .seccionIndex4:hover {
     height: 390px;
     height: 260px;
-    transition: 1.3s;
-  }
+    transition: 1.3s; }
+  .seccionIndex5 {
+    left: 65px; }
+  .mainIndex {
+    height: 790px; }
+  .seccionIndex {
+    height: 600px; } }
 
-  .seccionIndex5{
-    left: 65px;
-  }
-  .mainIndex{
-    height: 790px;
-  }
-  .seccionIndex{
-    height:600px;
-  }
-}
+@media (max-width: 1005px) {
+  .ofertasYpromoscontenido {
+    width: 900px; } }
 
-@media(max-width:1005px){
-  .ofertasYpromoscontenido{
+.cardOferta {
+  justify-content: center; }
+
+@media (max-width: 990px) {
+  .mainOfertas {
+    height: 950px; } }
+
+@media (max-width: 965px) {
+  .seccionIndex5 {
     width: 900px;
-  }
-}
+    left: 35px; } }
 
-@media(max-width:965px){
-  .seccionIndex5{
-    width: 900px;
-    left: 35px;
-  }
-}
-
-@media(max-width:940px){
-  .seccionIndex5{
+@media (max-width: 940px) {
+  .seccionIndex5 {
     width: 850px;
-    left: 40px;
-  }
-}
+    left: 40px; } }
 
-@media(max-width:900px){
-  .seccionIndex5{
+@media (max-width: 900px) {
+  .seccionIndex5 {
     width: 750px;
-    left: 70px;
-  }
+    left: 70px; }
+  .ofertasYpromoscontenido {
+    width: 850px; } }
 
-  .ofertasYpromoscontenido{
-    width: 850px;
-  }
-}
+@media (max-width: 850px) {
+  .seccionIndex5 {
+    width: 700px; }
+  .ofertasYpromoscontenido {
+    width: 800px; }
+    .ofertasYpromoscontenido input {
+      font-size: small; }
+  p {
+    font-size: small; } }
 
-@media(max-width:850px){
-  .seccionIndex5{
-    width: 700px;
-
-  }
-
-  .ofertasYpromoscontenido{
-    width: 800px;
-  }
-  .ofertasYpromoscontenido input,p{
-    font-size: small;
-  }
-}
-
-@media(max-width:810px){
-  .seccionIndex5{
-    width: 650px;
-  }
-
-  .seccionIndex1,.seccionIndex2,.seccionIndex3,.seccionIndex4{
+@media (max-width: 810px) {
+  .seccionIndex5 {
+    width: 650px; }
+  .seccionIndex1, .seccionIndex2, .seccionIndex3, .seccionIndex4 {
     width: 340px;
-    height: 230px;
-  }
-
-  .ofertasYpromoscontenido{
-    width: 750px;
-  }
-}
-
-@media(max-width:805px){
-  .divOfertas1,.divOfertas2{
-    width: 350px;
-    height: 300px;
-  }
-  .divOfertas3{
-    height: 300px;
-  }
-  .mainOfertas{
-    height: 930px;
-  }
-  .gridOfertas{
-    height: 85px;
-  }
-}
+    height: 230px; }
+  .ofertasYpromoscontenido {
+    width: 750px; } }
 
 @media (max-width: 768px) {
   /* inicio */
@@ -574,9 +480,9 @@ p, h2 {
     margin: 10px; }
   /* ofertaspromos */
   .mainOfertas {
-    height: 1000px; }
+    height: 900px; }
   .ofertasYpromoscontenido {
-    top: 59.3%;
+    top: 70px;
     width: fit-content;
     left: 0.2;
     height: 160px;
@@ -584,54 +490,29 @@ p, h2 {
     flex-direction: row;
     justify-content: center; }
     .ofertasYpromoscontenido form input {
-      font-size: small; }
-  .divOfertas1, .divOfertas2 {
-    height: 350px;
-    width: 350px; }
-  .divOfertas3 {
-    height: 300px; }
-  .gridOfertas {
-    width: 500px;
-    height: 200px; } }
+      font-size: small; } }
 
-@media(max-width:710px){
+@media (max-width: 710px) {
   .ofertasYpromoscontenido {
-    height: 200px;
-  }
-  .mainOfertas{
-    height: 990px;
-  }
-  .gridOfertas{
-    height: 150px;
-  }
-}
+    height: 200px; }
+  .mainOfertas {
+    height: 930px; } }
 
-@media(max-width:700px){
-  .divOfertas1,.divOfertas2{
-    width: 250px;
-    height: 200px;
-  }
-  .gridOfertas{
-    height: 90px;
-  }
-  .mainOfertas{
-    height: 880px;
-  }
-}
+@media (max-width: 700px) {
+  .mainOfertas {
+    height: 900px; }
+  .ofertasYpromoscontenido {
+    top: 40px; } }
 
-@media(max-width:510px){
-  .divOfertas1,.divOfertas2{
-    width: 220px;
-    height: 170px;
-  }
-  .gridOfertas{
-    padding: 30px;
-  }
-  .divOfertas3{
-    background-image: url(http://www.altrum.com.ar/wp-content/uploads/2016/08/galicia.jpg);
-    background-size: cover;
-  }
-}
+@media (max-width: 660px) {
+  .mainOfertas {
+    height: 1200px; } }
+
+@media (max-width: 510px) {
+  .mainOfertas {
+    height: 1200px; }
+  .ofertasYpromoscontenido {
+    top: 50px; } }
 
 /* responsive media query celular 480px */
 @media (max-width: 480px) {
@@ -651,42 +532,18 @@ p, h2 {
   .ofertasYpromoscontenido {
     padding: 5px;
     height: 180px;
-  }
-  .divOfertas1 {
-    height: 150px;
-    width: 190px; }
-  .divOfertas2 {
-    height: 150px;
-    width: 190px;
-    padding: 10px; }
-  .divOfertas3 {
-    height: 250px;
-    width: 430px;
-    padding: 10px; }
-  .gridOfertas {
-    width: 220px;
-    height: 70px;
-    justify-items: center;
-   }
-    .gridOfertas p {
-      font-size: x-small; }
-  .ofertasYpromoscontenido form input {
-    height: 1.5rem;
-    width: 250px; }
+    top: 780px; }
+  .gridOfertas p {
+    font-size: x-small; }
+  .ofertasYpromoscontenido {
+    top: 50px; }
+    .ofertasYpromoscontenido form input {
+      height: 1.5rem;
+      width: 250px; }
   .mainOfertas {
-    height: 810px; }
-  /* footer */ }
- 
-@media(max-width:440px){
-  .divOfertas3{
-    width: 400px;
-  }
-}
+    height: 1200px; } }
 
-@media(max-width:399px){
-  
-}
-
+/* footer */
 /* responsive media query celular 375px */
 @media (max-width: 375px) {
   .flexPadre li {
@@ -740,29 +597,15 @@ p, h2 {
     font-size: x-small; }
   /* ofertaspromos */
   .mainOfertas {
-    height: 700px;
-    flex-wrap: wrap; }
+    height: 900px; }
   .ofertasYpromoscontenido {
-    top: 70px;
+    top: 400px;
     width: fit-content;
-    height: 150px;
-   }
+    height: 150px; }
     .ofertasYpromoscontenido form input {
       height: 1.5rem;
       width: 200px;
       margin: 3px; }
-  .divOfertas1 {
-    height: 250px;
-    width: 150px; }
-  .divOfertas2 {
-    height: 250px;
-    width: 150px; }
-  .divOfertas3 {
-    height: 300px;
-    width: 300px; }
-  .gridOfertas {
-    width: 200px;
-    height: 400px; }
   /* footer */
   .footer {
     font-size: x-small; } }
@@ -779,22 +622,9 @@ p, h2 {
     height: 150px; }
   /* ofertaspromos */
   .ofertasYpromoscontenido {
-    top: 59.9px; }
-  .divOfertas1 {
-    width: 90px; }
-  .divOfertas2 {
-    width: 90px; }
-  .divOfertas3 {
-    width: 200px;
-    height: 210px; 
-  } 
-  .mainOfertas{
-    height: 700px;
-  }
-  .gridOfertas{
-    height: 430px;
-  }
-  }
+    top: 20px; }
+  .mainOfertas {
+    height: 900px; } }
 
 /* media query tablet 599px */
 @media (max-width: 599px) {
@@ -838,10 +668,7 @@ p, h2 {
     background-image: url(https://png.pngtree.com/png-vector/20190330/ourlarge/pngtree-vector-organization-icon-png-image_894718.jpg);
     background-size: cover; }
   /* ofertaspromos */
-  .divOfertas1, .divOfertas2 {
-    height: 120px;
-    width: 180px; }
-  .divOfertas3 {
-    width: 380px;
-    background-image: url(http://www.altrum.com.ar/wp-content/uploads/2016/08/galicia.jpg);
-    background-size: cover; } }
+  .mainOfertas {
+    height: 1200px; }
+  .ofertasYpromoscontenido {
+    top: 50px; } }

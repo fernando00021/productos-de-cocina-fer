@@ -1,0 +1,107 @@
+.seccionIndex {
+    color: white;
+    background-color: #292321;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 690px;
+    padding: 15px;
+  }
+  
+  .seccionIndex1 {
+    background-color: #888882;
+    border: 2px solid #ff5100;
+    height: 300px;
+    width: 600px;
+    padding: 10px;
+    background-image: url(https://d3ugyf2ht6aenh.cloudfront.net/stores/001/416/936/products/2111-ccad221c0de781694c16355395870833-1024-1024.jpg);
+    background-size: cover;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  
+  .seccionIndex2 {
+    background-color: #888882;
+    border: 2px solid #ff5100;
+    height: 300px;
+    width: 600px;
+    padding: 10px;
+    background-image: url(https://sneakers123.s3.amazonaws.com/blackfriday/236823/conversions/30off-thumb.jpg);
+    background-size: cover;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  
+  .seccionIndex3 {
+    background-color: #888882;
+    border: 2px solid #ff5100;
+    height: 300px;
+    width: 600px;
+    padding: 10px;
+    background-image: url(https://img.freepik.com/foto-gratis/comida-ingredientes_1220-4884.jpg?size=626&ext=jpg&ga=GA1.2.1588357300.1637193600);
+    background-size: cover;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  
+  .seccionIndex4 {
+    background-color: #888882;
+    border: 2px solid #ff5100;
+    height: 300px;
+    width: 600px;
+    padding: 10px;
+    background-image: url(https://i.ytimg.com/vi/ouhq3W8GLwE/maxresdefault.jpg);
+    background-size: cover;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  
+  .seccionIndex1:hover, .seccionIndex2:hover, .seccionIndex3:hover, .seccionIndex4:hover {
+    height: 280px;
+    width: 580px;
+    border: 2px outset red;
+    transition: all 1.3s;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  
+  .seccionIndex5 {
+    background-color: #888882;
+    border: 2px outset #ff5100;
+    width: 1300px;
+    padding: 15px;
+    position: relative;
+    top: 1px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    border-radius: 10px;
+  
+    input {
+      height: 2.5rem;
+      width: 350px;
+      margin: 5px;
+      border-radius: 15px;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+    }
+  }
+  .dejaTugmail {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mainIndex {
+    height: 890px;
+    background-color: #292321;
+  }
+  

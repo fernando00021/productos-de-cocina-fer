@@ -1,0 +1,50 @@
+.flexPadre {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 15px;
+    justify-content: space-evenly;
+    background-image: linear-gradient(45deg, #db2c49, #ebeb14);
+    align-content: center;
+  }
+  
+  .colorTitulo1 {
+    color: white;
+  }
+  
+  .colorTitulo2 {
+    color: black;
+  }
+  
+  .flexPadre li {
+    list-style: none;
+    padding: 25px;
+    background-color: black;
+    width: 160px;
+    height: 15px;
+    font-size: small;
+    text-align: start;
+    cursor: pointer;
+  
+    a {
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      position: relative;
+      bottom: 10px;
+      font-family: 'Roboto', sans-serif;
+  
+      &:hover {
+        color: #eb1212;
+        font-weight: 900;
+        transform: scale(1.2);
+      }
+    }
+  }
+  
+  .flexTitulo {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
