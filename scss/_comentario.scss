@@ -15,8 +15,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: black;
-    color: white;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     font-family: 'Roboto', sans-serif;
     border-radius: 10px;
@@ -38,5 +38,43 @@
   
     input:hover, textarea:hover {
       background-color: #ff5100;
+    }
+  }
+  @media (max-width: 768px){
+    .comentarioContenido {
+      height: 370px;
+      width: 340px;
+  
+      input {
+        height: 2rem;
+        width: 200px;
+        border-radius: 10px;
+      }
+    }
+  
+    textarea {
+      height: 2rem;
+      width: 200px;
+      border-radius: 10px;
+    }
+  }
+  @media (max-width: 375px){
+    .comentarioContenido {
+      height: 340px;
+      width: 250px;
+  
+      input {
+        height: 2rem;
+        width: 200px;
+        border-radius: 15px;
+        font-size: x-small;
+      }
+    }
+  
+    textarea {
+      height: 2rem;
+      width: 200px;
+      border-radius: 15px;
+      font-size: x-small;
     }
   }

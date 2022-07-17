@@ -39,8 +39,8 @@
   
   .card {
     margin: 5px;
-    color: white;
-    background-color: black;
+    color: rgb(255, 255, 255);
+    background-color: #000;
   
     &:hover {
       cursor: pointer;
@@ -52,4 +52,153 @@
     display: flex;
     flex-wrap: wrap;
   }
+  @media (max-width: 1074px) {
+    .ofertasYpromoscontenido {
+      width: 1000px;
+    }
+
+  }
+  @media (max-width: 1005px) {
+    .ofertasYpromoscontenido {
+      width: 900px;
+    }
   
+     .cardOferta {
+    justify-content: center;
+    }
+  }
+  @media (max-width: 990px) {
+    .mainOfertas {
+      height: 950px;
+    }
+  }
+  @media (max-width: 900px){
+    .ofertasYpromoscontenido {
+      width: 850px;
+    }
+  }
+  @media (max-width: 850px){
+    .ofertasYpromoscontenido {
+      width: 800px;
+  
+      input {
+        font-size: small;
+      }
+    }
+  
+    p {
+      font-size: small;
+    }
+  }
+  @media (max-width: 810px){
+    .ofertasYpromoscontenido {
+      width: 750px;
+    }
+  }
+  @media (max-width: 768px){
+    .mainOfertas {
+      height: 920px;
+    }
+  
+    .ofertasYpromoscontenido {
+      top: 70px;
+      width: fit-content;
+      left: 0.2;
+      height: 170px;
+      font-size: small;
+      flex-direction: row;
+      justify-content: center;
+  
+      form input {
+        font-size: small;
+      }
+    }
+  }
+  @media (max-width: 710px) {
+    .ofertasYpromoscontenido {
+      height: 200px;
+    }
+  
+    .mainOfertas {
+      height: 950px;
+    }
+  }
+  @media (max-width: 700px) {
+    .mainOfertas {
+      height: 930px;
+    }
+  
+    .ofertasYpromoscontenido {
+      top: 40px;
+    }
+  }
+  @media (max-width: 660px) {
+    .mainOfertas {
+      height: 1230px;
+    }
+  }
+  @media (max-width: 510px) {
+    .mainOfertas {
+      height: 1240px;
+    }
+  
+    .ofertasYpromoscontenido {
+      top: 50px;
+    }
+  }
+  @media (max-width: 480px){
+    
+  .ofertasYpromoscontenido {
+    padding: 5px;
+    height: 180px;
+    top: 780px;
+  }
+
+  .ofertasYpromoscontenido {
+    form input {
+      height: 1.5rem;
+      width: 250px;
+    }
+
+    top: 50px;
+  }
+
+  .mainOfertas {
+    height: 1250px;
+  }
+  }
+  @media (max-width: 375px){
+    .mainOfertas {
+      height: 1250px;
+    }
+  
+    .ofertasYpromoscontenido {
+      top: 400px;
+      width: fit-content;
+      height: 160px;
+  
+      form input {
+        height: 1.5rem;
+        width: 200px;
+        margin: 3px;
+      }
+    }
+  }
+  @media (max-width: 320px){
+    .ofertasYpromoscontenido {
+      top: 20px;
+    }
+  
+    .mainOfertas {
+      height: 900px;
+    }
+  }
+  @media (max-width: 399px){
+    .mainOfertas {
+      height: 1230px;
+    }
+  
+    .ofertasYpromoscontenido {
+      top: 50px;
+    }
+  }

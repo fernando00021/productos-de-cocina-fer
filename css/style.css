@@ -1,10 +1,98 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&display=swap");
-* {
-  margin: 0;
-  padding: 0; }
+.mainComentario {
+  height: 450px; }
 
-/* 1 selector de tipo etiqueta */
-/* flex */
+.flexComentario {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.comentarioContenido {
+  padding: 10px;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px; }
+  .comentarioContenido input {
+    height: 2.5rem;
+    width: 250px;
+    border-radius: 15px;
+    outline: none;
+    text-align: center;
+    margin: 8px; }
+  .comentarioContenido textarea {
+    height: 5rem;
+    width: 250px;
+    border-radius: 15px; }
+  .comentarioContenido input:hover, .comentarioContenido textarea:hover {
+    background-color: #ff5100; }
+
+@media (max-width: 768px) {
+  .comentarioContenido {
+    height: 370px;
+    width: 340px; }
+    .comentarioContenido input {
+      height: 2rem;
+      width: 200px;
+      border-radius: 10px; }
+  textarea {
+    height: 2rem;
+    width: 200px;
+    border-radius: 10px; } }
+
+@media (max-width: 375px) {
+  .comentarioContenido {
+    height: 340px;
+    width: 250px; }
+    .comentarioContenido input {
+      height: 2rem;
+      width: 200px;
+      border-radius: 15px;
+      font-size: x-small; }
+  textarea {
+    height: 2rem;
+    width: 200px;
+    border-radius: 15px;
+    font-size: x-small; } }
+
+.footer {
+  background-color: black;
+  color: white;
+  height: 200px;
+  position: relative;
+  bottom: 100%;
+  font-size: 15px; }
+  .footer li {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px; }
+  .footer a {
+    text-decoration: none;
+    color: white; }
+  .footer i {
+    font-size: 2rem; }
+
+.footer1 {
+  display: flex;
+  margin-bottom: 15px;
+  padding: 30px;
+  justify-content: space-evenly; }
+
+.footer2 {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-around; }
+
+@media (max-width: 375px) {
+  .footer {
+    font-size: x-small; } }
+
 .flexPadre {
   display: flex;
   flex-wrap: wrap;
@@ -46,136 +134,6 @@
   align-items: center;
   position: relative; }
 
-/* contenidos */
-.mainLocales {
-  height: 850px;
-  background-image: url(https://turismo.buenosaires.gob.ar/sites/turismo/files/field/image/9deJulio_obelisco_1200.jpg);
-  background-size: cover; }
-
-.flexLocales {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center; }
-
-.contenidoLocales {
-  background-color: black;
-  color: white;
-  border: 2px solid #ff3c00;
-  width: 400px;
-  margin: 10px; }
-  .contenidoLocales li {
-    list-style: none; }
-
-p, h2 {
-  list-style: none;
-  font-family: 'Roboto', sans-serif;
-  font-size: medium;
-  padding: 5px; }
-
-.mainComentario {
-  height: 450px; }
-
-.flexComentario {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.comentarioContenido {
-  padding: 10px;
-  width: 400px;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: black;
-  color: white;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  border-radius: 10px; }
-  .comentarioContenido input {
-    height: 2.5rem;
-    width: 250px;
-    border-radius: 15px;
-    outline: none;
-    text-align: center;
-    margin: 8px; }
-  .comentarioContenido textarea {
-    height: 5rem;
-    width: 250px;
-    border-radius: 15px; }
-  .comentarioContenido input:hover, .comentarioContenido textarea:hover {
-    background-color: #ff5100; }
-
-.mainProductos {
-  height: 70%; }
-
-.nuestrosProductoscontenido {
-  height: 1700px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center; }
-  .nuestrosProductoscontenido div {
-    height: 400px;
-    text-align: center;
-    font-size: small;
-    font-family: 'Roboto', sans-serif; }
-    .nuestrosProductoscontenido div img:hover {
-      transform: translatey(10px);
-      transition: all 1.3s;
-      cursor: pointer; }
-
-.imagen {
-  height: 200px;
-  width: 200px;
-  padding: 30px; }
-
-.ofertasYpromoscontenido {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 1340px;
-  background-color: #888882;
-  border: 2px outset #ff5100;
-  position: relative;
-  top: 50px;
-  padding: 15px; }
-  .ofertasYpromoscontenido form input {
-    height: 2.5rem;
-    width: 350px;
-    border-radius: 15px;
-    text-align: center;
-    margin: 4px; }
-  .ofertasYpromoscontenido p {
-    font-family: 'Roboto', sans-serif; }
-
-.mainOfertas {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #c5cccc;
-  height: 650px; }
-  .mainOfertas p {
-    font-family: 'Roboto', sans-serif;
-    margin: 10px; }
-
-.card {
-  margin: 5px;
-  color: white;
-  background-color: black; }
-  .card:hover {
-    cursor: pointer;
-    background-color: #eb1212; }
-
-.cardOferta {
-  display: flex;
-  flex-wrap: wrap; }
-
-/* index */
 .seccionIndex {
   color: white;
   background-color: #292321;
@@ -273,35 +231,6 @@ p, h2 {
   height: 890px;
   background-color: #292321; }
 
-.footer {
-  background-color: black;
-  color: white;
-  height: 200px;
-  position: relative;
-  bottom: 100%;
-  font-size: 15px; }
-  .footer li {
-    list-style: none;
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 15px; }
-  .footer a {
-    text-decoration: none;
-    color: white; }
-  .footer i {
-    font-size: 2rem; }
-
-.footer1 {
-  display: flex;
-  margin-bottom: 15px;
-  padding: 30px;
-  justify-content: space-evenly; }
-
-.footer2 {
-  display: flex;
-  margin-top: 15px;
-  justify-content: space-around; }
-
-/* responsive media query tablet*/
 @media (max-width: 1074px) {
   .seccionIndex1, .seccionIndex2, .seccionIndex3, .seccionIndex4 {
     height: 300px;
@@ -319,18 +248,7 @@ p, h2 {
       padding: 17px;
       height: 20px;
       width: 144px;
-      font-size: small; }
-  .ofertasYpromoscontenido {
-    width: 1000px; } }
-
-@media (max-width: 1066px) {
-  .flexPadre li {
-    font-size: x-small;
-    width: 130px; }
-  .seccionIndex5 {
-    width: 1028px;
-    right: 30px;
-    left: 15px; } }
+      font-size: small; } }
 
 @media (max-width: 1055px) {
   .seccionIndex5 {
@@ -364,17 +282,6 @@ p, h2 {
   .seccionIndex {
     height: 600px; } }
 
-@media (max-width: 1005px) {
-  .ofertasYpromoscontenido {
-    width: 900px; } }
-
-.cardOferta {
-  justify-content: center; }
-
-@media (max-width: 990px) {
-  .mainOfertas {
-    height: 950px; } }
-
 @media (max-width: 965px) {
   .seccionIndex5 {
     width: 900px;
@@ -388,28 +295,18 @@ p, h2 {
 @media (max-width: 900px) {
   .seccionIndex5 {
     width: 750px;
-    left: 70px; }
-  .ofertasYpromoscontenido {
-    width: 850px; } }
+    left: 70px; } }
 
 @media (max-width: 850px) {
   .seccionIndex5 {
-    width: 700px; }
-  .ofertasYpromoscontenido {
-    width: 800px; }
-    .ofertasYpromoscontenido input {
-      font-size: small; }
-  p {
-    font-size: small; } }
+    width: 700px; } }
 
 @media (max-width: 810px) {
   .seccionIndex5 {
     width: 650px; }
   .seccionIndex1, .seccionIndex2, .seccionIndex3, .seccionIndex4 {
     width: 340px;
-    height: 230px; }
-  .ofertasYpromoscontenido {
-    width: 750px; } }
+    height: 230px; } }
 
 @media (max-width: 768px) {
   /* inicio */
@@ -441,80 +338,8 @@ p, h2 {
       font-size: small; }
   .seccionIndex1, .seccionIndex2, .seccionIndex3, .seccionIndex4 {
     height: 250px;
-    width: 450px; }
-  /* locales */
-  .contenidoLocales {
-    width: 300px; }
-    .contenidoLocales li {
-      font-size: small; }
-  h2, p {
-    font-size: small; }
-  .mainLocales {
-    height: 650px; }
-  /* comentario */
-  .comentarioContenido {
-    height: 370px;
-    width: 340px; }
-    .comentarioContenido input {
-      height: 2rem;
-      width: 200px;
-      border-radius: 10px; }
-  textarea {
-    height: 2rem;
-    width: 200px;
-    border-radius: 10px; }
-  /* prodcutos */
-  .mainProductos {
-    height: 1500px; }
-  .nuestrosProductoscontenido {
-    height: 1000px;
-    flex-wrap: wrap;
-    flex-direction: row; }
-    .nuestrosProductoscontenido div {
-      height: 350px;
-      font-size: x-small; }
-  .imagen {
-    height: 180px;
-    width: 180px;
-    padding: 15px;
-    margin: 10px; }
-  /* ofertaspromos */
-  .mainOfertas {
-    height: 900px; }
-  .ofertasYpromoscontenido {
-    top: 70px;
-    width: fit-content;
-    left: 0.2;
-    height: 160px;
-    font-size: small;
-    flex-direction: row;
-    justify-content: center; }
-    .ofertasYpromoscontenido form input {
-      font-size: small; } }
+    width: 450px; } }
 
-@media (max-width: 710px) {
-  .ofertasYpromoscontenido {
-    height: 200px; }
-  .mainOfertas {
-    height: 930px; } }
-
-@media (max-width: 700px) {
-  .mainOfertas {
-    height: 900px; }
-  .ofertasYpromoscontenido {
-    top: 40px; } }
-
-@media (max-width: 660px) {
-  .mainOfertas {
-    height: 1200px; } }
-
-@media (max-width: 510px) {
-  .mainOfertas {
-    height: 1200px; }
-  .ofertasYpromoscontenido {
-    top: 50px; } }
-
-/* responsive media query celular 480px */
 @media (max-width: 480px) {
   .mainIndex {
     height: 1335px; }
@@ -527,24 +352,8 @@ p, h2 {
     left: 0.2px; }
     .seccionIndex5 input {
       height: 1.5rem;
-      width: 250px; }
-  /* ofertaspromos */
-  .ofertasYpromoscontenido {
-    padding: 5px;
-    height: 180px;
-    top: 780px; }
-  .gridOfertas p {
-    font-size: x-small; }
-  .ofertasYpromoscontenido {
-    top: 50px; }
-    .ofertasYpromoscontenido form input {
-      height: 1.5rem;
-      width: 250px; }
-  .mainOfertas {
-    height: 1200px; } }
+      width: 250px; } }
 
-/* footer */
-/* responsive media query celular 375px */
 @media (max-width: 375px) {
   .flexPadre li {
     padding: 12px;
@@ -560,7 +369,7 @@ p, h2 {
     height: 1180px; }
   .seccionIndex5 {
     width: fit-content;
-    height: 140px;
+    height: 145px;
     bottom: 10px;
     left: 0.2px;
     font-size: xx-small; }
@@ -571,46 +380,8 @@ p, h2 {
       margin: 6px; }
   .seccionIndex1, .seccionIndex2, .seccionIndex3, .seccionIndex4 {
     height: 200px;
-    width: 400px; }
-  /* locales */
-  .contenidoLocales {
-    width: 260px; }
-    .contenidoLocales li {
-      font-size: x-small; }
-  h2, p {
-    font-size: x-small; }
-  .mainLocales {
-    height: 600px; }
-  /* comentario */
-  .comentarioContenido {
-    height: 340px;
-    width: 250px; }
-    .comentarioContenido input {
-      height: 2rem;
-      width: 200px;
-      border-radius: 15px;
-      font-size: x-small; }
-  textarea {
-    height: 2rem;
-    width: 200px;
-    border-radius: 15px;
-    font-size: x-small; }
-  /* ofertaspromos */
-  .mainOfertas {
-    height: 900px; }
-  .ofertasYpromoscontenido {
-    top: 400px;
-    width: fit-content;
-    height: 150px; }
-    .ofertasYpromoscontenido form input {
-      height: 1.5rem;
-      width: 200px;
-      margin: 3px; }
-  /* footer */
-  .footer {
-    font-size: x-small; } }
+    width: 400px; } }
 
-/* responsive media query celular 320px */
 @media (max-width: 320px) {
   /* inicio */
   .flexPadre li {
@@ -619,14 +390,249 @@ p, h2 {
   .seccionIndex {
     height: 890px; }
   .seccionIndex5 {
-    height: 150px; }
-  /* ofertaspromos */
+    height: 150px; } }
+
+@media (max-width: 399px) {
+  .seccionIndex2 {
+    background-image: url(https://cdn.vectorstock.com/i/1000x1000/66/62/black-banner-discount-purchase-30-percent-sale-vector-18046662.webp);
+    background-size: cover; }
+  .seccionIndex4 {
+    background-image: url(https://png.pngtree.com/png-vector/20190330/ourlarge/pngtree-vector-organization-icon-png-image_894718.jpg);
+    background-size: cover; } }
+
+.mainLocales {
+  height: 850px;
+  background-image: url(https://turismo.buenosaires.gob.ar/sites/turismo/files/field/image/9deJulio_obelisco_1200.jpg);
+  background-size: cover; }
+
+.flexLocales {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center; }
+
+.contenidoLocales {
+  background-color: black;
+  color: white;
+  border: 2px solid #ff3c00;
+  width: 400px;
+  margin: 10px; }
+  .contenidoLocales li {
+    list-style: none; }
+
+p, h2 {
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: medium;
+  padding: 5px; }
+
+@media (max-width: 768px) {
+  .contenidoLocales {
+    width: 300px; }
+    .contenidoLocales li {
+      font-size: small; }
+  h2, p {
+    font-size: small; }
+  .mainLocales {
+    height: 650px; } }
+
+@media (max-width: 375px) {
+  .contenidoLocales {
+    width: 260px; }
+    .contenidoLocales li {
+      font-size: x-small; }
+  h2, p {
+    font-size: x-small; }
+  .mainLocales {
+    height: 600px; } }
+
+.ofertasYpromoscontenido {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1340px;
+  background-color: #888882;
+  border: 2px outset #ff5100;
+  position: relative;
+  top: 50px;
+  padding: 15px; }
+  .ofertasYpromoscontenido form input {
+    height: 2.5rem;
+    width: 350px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 4px; }
+  .ofertasYpromoscontenido p {
+    font-family: 'Roboto', sans-serif; }
+
+.mainOfertas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c5cccc;
+  height: 650px; }
+  .mainOfertas p {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px; }
+
+.card {
+  margin: 5px;
+  color: white;
+  background-color: #000; }
+  .card:hover {
+    cursor: pointer;
+    background-color: #eb1212; }
+
+.cardOferta {
+  display: flex;
+  flex-wrap: wrap; }
+
+@media (max-width: 1074px) {
+  .ofertasYpromoscontenido {
+    width: 1000px; } }
+
+@media (max-width: 1005px) {
+  .ofertasYpromoscontenido {
+    width: 900px; }
+  .cardOferta {
+    justify-content: center; } }
+
+@media (max-width: 990px) {
+  .mainOfertas {
+    height: 950px; } }
+
+@media (max-width: 900px) {
+  .ofertasYpromoscontenido {
+    width: 850px; } }
+
+@media (max-width: 850px) {
+  .ofertasYpromoscontenido {
+    width: 800px; }
+    .ofertasYpromoscontenido input {
+      font-size: small; }
+  p {
+    font-size: small; } }
+
+@media (max-width: 810px) {
+  .ofertasYpromoscontenido {
+    width: 750px; } }
+
+@media (max-width: 768px) {
+  .mainOfertas {
+    height: 920px; }
+  .ofertasYpromoscontenido {
+    top: 70px;
+    width: fit-content;
+    left: 0.2;
+    height: 170px;
+    font-size: small;
+    flex-direction: row;
+    justify-content: center; }
+    .ofertasYpromoscontenido form input {
+      font-size: small; } }
+
+@media (max-width: 710px) {
+  .ofertasYpromoscontenido {
+    height: 200px; }
+  .mainOfertas {
+    height: 950px; } }
+
+@media (max-width: 700px) {
+  .mainOfertas {
+    height: 930px; }
+  .ofertasYpromoscontenido {
+    top: 40px; } }
+
+@media (max-width: 660px) {
+  .mainOfertas {
+    height: 1230px; } }
+
+@media (max-width: 510px) {
+  .mainOfertas {
+    height: 1240px; }
+  .ofertasYpromoscontenido {
+    top: 50px; } }
+
+@media (max-width: 480px) {
+  .ofertasYpromoscontenido {
+    padding: 5px;
+    height: 180px;
+    top: 780px; }
+  .ofertasYpromoscontenido {
+    top: 50px; }
+    .ofertasYpromoscontenido form input {
+      height: 1.5rem;
+      width: 250px; }
+  .mainOfertas {
+    height: 1250px; } }
+
+@media (max-width: 375px) {
+  .mainOfertas {
+    height: 1250px; }
+  .ofertasYpromoscontenido {
+    top: 400px;
+    width: fit-content;
+    height: 160px; }
+    .ofertasYpromoscontenido form input {
+      height: 1.5rem;
+      width: 200px;
+      margin: 3px; } }
+
+@media (max-width: 320px) {
   .ofertasYpromoscontenido {
     top: 20px; }
   .mainOfertas {
     height: 900px; } }
 
-/* media query tablet 599px */
+@media (max-width: 399px) {
+  .mainOfertas {
+    height: 1230px; }
+  .ofertasYpromoscontenido {
+    top: 50px; } }
+
+.mainProductos {
+  height: 70%; }
+
+.nuestrosProductoscontenido {
+  height: 1700px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .nuestrosProductoscontenido div {
+    height: 400px;
+    text-align: center;
+    font-size: small;
+    font-family: 'Roboto', sans-serif; }
+    .nuestrosProductoscontenido div img:hover {
+      transform: translatey(10px);
+      transition: all 1.3s;
+      cursor: pointer; }
+
+.imagen {
+  height: 200px;
+  width: 200px;
+  padding: 30px; }
+
+@media (max-width: 768px) {
+  .mainProductos {
+    height: 1500px; }
+  .nuestrosProductoscontenido {
+    height: 1000px;
+    flex-wrap: wrap;
+    flex-direction: row; }
+    .nuestrosProductoscontenido div {
+      height: 350px;
+      font-size: x-small; }
+  .imagen {
+    height: 180px;
+    width: 180px;
+    padding: 15px;
+    margin: 10px; } }
+
 @media (max-width: 599px) {
   /* producto */
   .nuestrosProductoscontenido {
@@ -659,16 +665,4 @@ p, h2 {
   .mainProductos {
     height: 2600px; }
   .nuestrosProductoscontenido {
-    height: 2500px; }
-  /* menu */
-  .seccionIndex2 {
-    background-image: url(https://cdn.vectorstock.com/i/1000x1000/66/62/black-banner-discount-purchase-30-percent-sale-vector-18046662.webp);
-    background-size: cover; }
-  .seccionIndex4 {
-    background-image: url(https://png.pngtree.com/png-vector/20190330/ourlarge/pngtree-vector-organization-icon-png-image_894718.jpg);
-    background-size: cover; }
-  /* ofertaspromos */
-  .mainOfertas {
-    height: 1200px; }
-  .ofertasYpromoscontenido {
-    top: 50px; } }
+    height: 2500px; } }
